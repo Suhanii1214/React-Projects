@@ -53,7 +53,12 @@ If in case, we have to increment value in this manner only we can include a call
     setCount((prevCount) => prevCount + 1 )
     setCount((prevCount) => prevCount + 1 )
   }
-Here, the value returned would be 19 as everytime it is taking the prev value from the callback function
+Here, the value returned would be 19 as everytime it is taking the prev value from the callback
+
+8) onClick function
+The onClick function always accepts a functions that is why we either pass a callback funtion(arrow function) to onClick or explicitly create a function and then pass its refernce to the onClick metthod
+
+onClick = {setColor("red")} this will cause an error because ultimately we are passing a return value from the setColor function to onClick but onClick accepts only the function.
 
 
 
