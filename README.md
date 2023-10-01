@@ -60,5 +60,18 @@ The onClick function always accepts a functions that is why we either pass a cal
 
 onClick = {setColor("red")} this will cause an error because ultimately we are passing a return value from the setColor function to onClick but onClick accepts only the function.
 
+9) useCallback hook
+Whenever we use the useState hook on a variable for state change it re-renders the web page to update tha value but our webpage can also contain a few functions whose value need not to be updated on changing the useState variable. To prevent this unwanted update in functions we use the useCallback function which stores the cache/previous value of the function and stops the function from re-rendering.
+
+useCallback functions are mainly use to improve/optimize the performance of our React App by storing a cache/memoized function.
+
+Similarly *useMemo()* hook is used for variable -> memoized variables.
+
+10) useEffect hook
+the useEffect hook is used when we want to tell our react app that our component need to do something after render
+
+11) Memoization
+Memoization is an optimization technique for accelerating computer programs by caching the results of heavy function calls and returning them when similar inputs are encountered repeatedly.
+
 
 
