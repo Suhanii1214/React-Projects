@@ -73,5 +73,7 @@ the useEffect hook is used when we want to tell our react app that our component
 11) Memoization
 Memoization is an optimization technique for accelerating computer programs by caching the results of heavy function calls and returning them when similar inputs are encountered repeatedly.
 
+12) React Router
+a. We use <Link> tag that we get from react router dom in place of <a> tag because <a> tag reloads the entire page but <Link> tag does not 
 
 
